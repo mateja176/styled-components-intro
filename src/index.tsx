@@ -1,13 +1,5 @@
-import React from "react";
-import { render } from "react-dom";
-import styled from "styled-components";
+import React from "react"
+import { render } from "react-dom"
+import App from "./App"
 
-const App = ({ className }) => (
-  <div className={className}>Hello Styled Components</div>
-);
-
-const StyledApp = styled(App)`
-  background: #eee;
-`;
-
-render(<StyledApp />, document.querySelector("#app"));
+render(<App />, document.querySelector("#app"))
